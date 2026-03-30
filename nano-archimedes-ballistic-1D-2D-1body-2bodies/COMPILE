@@ -1,0 +1,33 @@
+===============================================================
+TO CHOOSE THE TOOL:
+
+1.1) If you are interested in running a 1D simulation of
+a particle tunnelling through a potential barrier:
+
+> cd src-1D-ballistic
+
+1.2) If you are interested in running a 2D simulation of
+a particle interacting with a potential barrier:
+
+> cd src-2D-ballistic
+
+1.3) If you are interested in running a 1D simulation of
+a two-body system:
+
+> cd src-1D-2bodies
+
+===============================================================
+
+===============================================================
+TO COMPILE TYPE IN A TERMINAL:
+
+> gcc nano-archimedes.c -Wall -lm -Ofast -o nano-archimedes
+
+===============================================================
+
+===============================================================
+TO RUN THE CODE IN A TERMINAL:
+
+> ./nano-archimedes
+
+===============================================================

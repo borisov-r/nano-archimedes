@@ -1,0 +1,78 @@
+   Copyright (C) 2004-2015 Jean Michel D. Sellier
+   <jeanmichel.sellier@gmail.com>
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3, or (at your option)
+   any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+   =============================================================================
+   This is a very short manual about nano-archimedes
+   =============================================================================
+
+   nano-archimedes is a quantum mechanical simulator
+   which implements the single- and many-body signed particle formulation of
+   quantum mechanics, which discretization is also know as the signed particle
+   Wigner Monte Carlo method. The signed particle formulation of
+   quantum mechanics is an alternative model which describes quantum systems
+   in terms of ensemble of signed particles which, in turn, are able to fully
+   reconstruct the corresponding Wigner quasi-distribution functions.
+   This theory is, of course, completely equivalent to more standard
+   formulations such as the Schroedinger model.
+
+   For more information, lectures and results about the Wigner formalism,
+   please visit the following website:
+
+   www.nano-archimedes.com
+
+
+   In this release, nano-archimedes simulates a Gaussian wave-packet going towards
+   a potential barrier.
+
+   The parameters defining the problem can be found in the file nano-archimedes.c,
+   where:
+
+   - MSTAR                  = effective mass
+   - INUM                   = initial maximum number of particle per phase-space cell
+   - LX                     = length of the X-spatial domain
+   - LY                     = length of the Y-spatial domain (only in 2D)
+   - LC                     = length defining the momentum discretization
+                              (sometimes referred to as "coherence lenght" or "cut-off length")
+   - NX                     = number of cells in x-direction
+   - NY                     = number of cells in y-direction (only in 2D)
+   - DT                     = time step
+   - ITMAX                  = total number of time steps
+   - SIGMA_WAVE_PACKET      = wave packet dispersion
+   - X0_WAVE_PACKET         = wave packet initial x-position
+   - Y0_WAVE_PACKET         = wave packet initial y-position
+   - BARRIER_POTENTIAL      = value of the potential barrier
+   - BARRIER_POSITION       = barrier center position
+   - BARRIER_WIDTH          = barrier width
+   - K0_WAVE_PACKET         = wave packet initial wave vector
+   - ANNIHILATION_FREQUENCY = number of time steps at which annihilation occurs
+
+
+   ===> You can extend easily this code to more general situations by following
+        the details presented in these papers:
+
+        J.M. Sellier,
+        A signed particle formulation of non-relativistic quantum mechanics,
+        Journal of Computational Phyisics (2015).
+
+        J.M. Sellier, M. Nedjalkov, I. Dimov,
+        An introduction to applied quantum mechanics in the Wigner Monte Carlo formalism,
+        Physics Reports 577, pp. 1-34, (2015).
+
+   =============================================================================
+   If you use nano-archimedes in your research please consider citing one of the
+   papers above.
+   =============================================================================
+
